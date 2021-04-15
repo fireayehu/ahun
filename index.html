@@ -47,6 +47,24 @@
       .logo-text {
         font-size: 20px;
       }
+      .business-detail-sm {
+        display: none;
+      }
+      @media (max-width: 576px) {
+        .container {
+          width: 100%;
+          margin: 0;
+        }
+        .vibe-cover-img {
+          height: 200px;
+        }
+        .business-detail-sm {
+          display: block;
+        }
+        .business-detail-lg {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -54,26 +72,56 @@
       <img src="./img/logo.png" class="mr-1 logo" alt="..." />
       <span class="font-weight-bold logo-text">ahun</span>
     </div>
-    <div class="jumbotron py-4 jumbotron-fluid px-5">
+    <div class="jumbotron py-4 jumbotron-fluid">
       <div class="container">
         <div class="media">
           <img src="./img/food.jpg" class="mr-3 cover-img" alt="..." />
           <div class="media-body">
             <h4 class="my-0 font-weight-bold">Bella Pasta Restaurant</h4>
             <p class="text-muted my-0 business-info">Around Bole Medhanialem</p>
-            <p class="text-muted mt-0 business-info">
-              <span class="text-success">Open</span> closes at 8:00 am
-            </p>
-            <p class="text-dark description">
-              Will you do the same for me? It's time to face the music I'm no
-              longer your muse. Heard it's beautiful, be the judge and my girls
-              gonna take a vote. I can feel a phoenix inside of me. Heaven is
-              jealous of our love, angels are crying from up above. Yeah, you
-              take me to utopia.
-            </p>
-            <span class="badge badge-secondary px-3 py-2 mr-2">Pizza</span>
-            <span class="badge badge-secondary px-3 py-2 mr-2">Italian</span>
-            <span class="badge badge-secondary px-3 py-2 mr-2">Pasta</span>
+
+            <div class="business-detail-lg">
+              <p class="text-muted mt-0 business-info">
+                <span class="text-success">Open</span> closes at 8:00 am
+              </p>
+              <p class="text-dark description">
+                Will you do the same for me? It's time to face the music I'm no
+                longer your muse. Heard it's beautiful, be the judge and my
+                girls gonna take a vote. I can feel a phoenix inside of me.
+                Heaven is jealous of our love, angels are crying from up above.
+                Yeah, you take me to utopia.
+              </p>
+              <div class="d-flex flex-wrap">
+                <span class="badge badge-secondary px-3 py-2 mr-2 mb-2"
+                  >Pizza</span
+                >
+                <span class="badge badge-secondary px-3 py-2 mr-2 mb-2"
+                  >Italian</span
+                >
+                <span class="badge badge-secondary px-3 py-2 mr-2 mb-2"
+                  >Pasta</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="business-detail-sm mt-2">
+          <p class="text-muted mt-0 business-info">
+            <span class="text-success">Open</span> closes at 8:00 am
+          </p>
+          <p class="text-dark description text-justify">
+            Will you do the same for me? It's time to face the music I'm no
+            longer your muse. Heard it's beautiful, be the judge and my girls
+            gonna take a vote. I can feel a phoenix inside of me. Heaven is
+            jealous of our love, angels are crying from up above. Yeah, you take
+            me to utopia.
+          </p>
+          <div class="d-flex flex-wrap">
+            <span class="badge badge-secondary px-3 py-2 mr-2 mb-2">Pizza</span>
+            <span class="badge badge-secondary px-3 py-2 mr-2 mb-2"
+              >Italian</span
+            >
+            <span class="badge badge-secondary px-3 py-2 mr-2 mb-2">Pasta</span>
           </div>
         </div>
       </div>
@@ -82,16 +130,16 @@
       <div class="mb-4">
         <h5 class="font-weight-bold my-3">Vibes</h5>
         <div class="row">
-          <div class="col-md-3 pr-2 mb-2 pl-0">
+          <div class="col-md-3 mb-2 pl-sm-0 pr-sm-2">
             <img src="./img/food.jpg" class="vibe-cover-img" alt="..." />
           </div>
-          <div class="col-md-3 pr-2 mb-2 pl-0">
+          <div class="col-md-3 mb-2 pl-sm-0 pr-sm-2">
             <img src="./img/food.jpg" class="vibe-cover-img" alt="..." />
           </div>
-          <div class="col-md-3 pr-2 mb-2 pl-0">
+          <div class="col-md-3 mb-2 pl-sm-0 pr-sm-2">
             <img src="./img/food.jpg" class="vibe-cover-img" alt="..." />
           </div>
-          <div class="col-md-3 pr-2 mb-2 pl-0">
+          <div class="col-md-3 mb-2 pl-sm-0 pr-sm-2">
             <img src="./img/food.jpg" class="vibe-cover-img" alt="..." />
           </div>
         </div>
